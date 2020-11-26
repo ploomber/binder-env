@@ -22,4 +22,5 @@ dependencies:
   - seaborn
   - pandas
   - ploomber
+  - nbgitpuller
 name: projects
