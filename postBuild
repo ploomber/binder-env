@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# TODO: use commands from tasks.py in the projects repo
+pip install --editable python-api/
+pip install pkg/
+
+cd spec-api-sql/setup && bash setup.sh && cd ../..
+
+
+jupyter serverextension enable --py nbgitpuller --sys-prefix

@@ -1,0 +1,25 @@
+# This file was automatically generated
+channels:
+- conda-forge
+dependencies:
+- scikit-learn
+- pygraphviz
+- python=3.7
+- r-base
+- numpy
+- p7zip
+- matplotlib
+- seaborn
+- pandas
+- r-irkernel
+- pip:
+  - scikit-learn
+  - pyarrow
+  - patool
+  - pyunpack
+  - jupyter
+  - sklearn-evaluation
+  - seaborn
+  - pandas
+  - ploomber
+name: projects
