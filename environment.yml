@@ -9,8 +9,8 @@ dependencies:
 - r-base=4.0.3
 - r-irkernel
 - pip:
-  - ploomber
   - jupyter
+  - ploomber
   - matplotlib
   - nbgitpuller
   - numpy
