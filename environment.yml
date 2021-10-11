@@ -12,6 +12,7 @@ dependencies:
 - scikit-learn
 - pip:
   - jupyter
+  - jupyter-server-proxy
   - matplotlib
   - mlflow
   - nbgitpuller
