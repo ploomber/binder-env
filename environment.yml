@@ -11,6 +11,8 @@ dependencies:
 - r-irkernel
 - scikit-learn
 - pip:
+  - ipywidgets
+  - joblib
   - jupyter
   - jupyter-server-proxy
   - matplotlib
