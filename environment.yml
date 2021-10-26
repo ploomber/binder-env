@@ -14,14 +14,13 @@ dependencies:
   - ipywidgets
   - joblib
   - jupyter
-  - jupyter-server-proxy
   - matplotlib
   - mlflow
   - nbgitpuller
   - numpy
   - pandas
   - patool
-  - ploomber
+  - ploomber>=0.13.4
   - pyarrow
   - pyunpack
   - scikit-learn
