@@ -20,7 +20,7 @@ dependencies:
   - numpy
   - pandas
   - patool
-  - ploomber>=0.13.4
+  - ploomber>=0.13.5
   - pyarrow
   - pyunpack
   - scikit-learn
