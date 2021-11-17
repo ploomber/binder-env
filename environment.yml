@@ -21,7 +21,7 @@ dependencies:
   - pandas
   - pandas-profiling
   - patool
-  - ploomber
+  - ploomber>=0.13.6
   - plotly
   - pyarrow
   - pyunpack
