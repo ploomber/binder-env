@@ -21,7 +21,7 @@ dependencies:
   - pandas
   - pandas-profiling
   - patool
-  - ploomber>=0.13.6
+  - ploomber
   - plotly
   - pyarrow
   - pyunpack
@@ -29,5 +29,6 @@ dependencies:
   - seaborn
   - sklearn-evaluation
   - soopervisor
+  - soorgeon
   - sqlalchemy
 name: projects
