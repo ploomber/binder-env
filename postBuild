@@ -9,3 +9,7 @@ rm -rf projects
 
 # required to make nbgitpuller work
 jupyter serverextension enable --py nbgitpuller --sys-prefix
+
+# ask ploomber not to track
+mkdir -p $HOME/.ploomber/stats
+echo 'stats_enabled: false' > $HOME/.ploomber/stats/config.yaml
