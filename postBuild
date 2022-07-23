@@ -13,3 +13,6 @@ jupyter serverextension enable --py nbgitpuller --sys-prefix
 # ask ploomber not to track
 mkdir -p $HOME/.ploomber/stats
 echo 'stats_enabled: false' > $HOME/.ploomber/stats/config.yaml
+
+# enable single click to open .py as notebooks
+ploomber nb --single-click
