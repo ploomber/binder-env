@@ -7,6 +7,8 @@ pip install pip --upgrade
 pip install invoke
 # invoke setup --no-create-conda
 rm -rf projects
+# for some reason, the environment ends up with and old version
+pip install nbclient --upgrade
 
 # required to make nbgitpuller work
 jupyter serverextension enable --py nbgitpuller --sys-prefix
