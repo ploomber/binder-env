@@ -15,6 +15,5 @@ jupyter serverextension enable --py nbgitpuller --sys-prefix
 mkdir -p $HOME/.ploomber/stats
 echo 'stats_enabled: false' > $HOME/.ploomber/stats/config.yaml
 
-pip install nbclient --upgrade
 # enable single click to open .py as notebooks
 ploomber nb --single-click
