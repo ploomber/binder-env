@@ -1,6 +1,6 @@
 # Binder environment
 
-*Last update: Ploomber 0.21*
+*Last update:* Ploomber 0.21
 
 This repository configures the environment that runs in Binder. To see the examples, [see this repository](https://github.com/ploomber/projects).
 
