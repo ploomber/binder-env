@@ -12,7 +12,7 @@ dependencies:
 - scikit-learn
 - pip:
   - ploomber>=0.21
-  - ipywidgets
+  - ipywidgets<8
   - joblib
   - jupyter
   - matplotlib
