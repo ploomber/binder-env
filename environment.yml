@@ -11,6 +11,7 @@ dependencies:
 - r-irkernel
 - scikit-learn
 - pip:
+  - ploomber>=0.21
   - ipywidgets
   - joblib
   - jupyter
@@ -21,7 +22,6 @@ dependencies:
   - pandas
   - pandas-profiling
   - patool
-  - ploomber
   - plotly
   - pyarrow
   - pyunpack
