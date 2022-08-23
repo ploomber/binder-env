@@ -7,7 +7,7 @@ This repository configures the environment that runs in Binder. To see the examp
 
 To generate links:
 
-https://jupyterhub.github.io/nbgitpuller/link
+https://jupyterhub.github.io/nbgitpuller/link?tab=binder
 
 Example link:
 
