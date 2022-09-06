@@ -31,4 +31,10 @@ dependencies:
   - soopervisor
   - soorgeon
   - sqlalchemy
+  # jupysql examples
+  - jupysql
+  - duckdb
+  - duckdb-engine
+  - psutil
+  - memory-profiler
 name: projects
