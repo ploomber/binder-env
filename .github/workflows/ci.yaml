@@ -30,7 +30,7 @@ jobs:
         run:
           python update-environment-yml.py
 
-      - name: Commit report
+      - name: Push updated environment.yml
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'bot@ploomber.io'
