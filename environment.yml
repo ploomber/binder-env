@@ -1,4 +1,4 @@
-# This file was automatically generated.
+# Automatically added by GitHub Actions on 2022-11-06 18:06:42.964344
 
 channels:
 - conda-forge
@@ -41,4 +41,3 @@ dependencies:
   - psutil
   - memory-profiler
 name: projects
-
