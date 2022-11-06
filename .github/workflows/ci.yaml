@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get install -y chromium-browser
-          pip install selenium webdriver-manager
+          pip install selenium webdriver-manager packaging
 
       - name: Docker build
         run: |
