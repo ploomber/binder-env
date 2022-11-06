@@ -29,7 +29,7 @@ dependencies:
   - pyunpack
   - scikit-learn
   - seaborn
-  - sklearn-evaluation
+  - sklearn-evaluation==0.7.8
   - soopervisor
   - soorgeon
   - sqlalchemy
