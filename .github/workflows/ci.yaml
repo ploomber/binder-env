@@ -26,6 +26,17 @@ jobs:
           sudo apt-get install -y chromium-browser
           pip install selenium==4.6.0 webdriver-manager==3.8.4 packaging==21.3
 
+      - name: Update environment.yml
+        run:
+          python update-environment-yml.py
+
+      - name: Commit report
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'bot@ploomber.io'
+          git commit -am "Edits environment.yml [BOT]"
+          git push
+
       - name: Docker build
         run: |
           python docker-build.py

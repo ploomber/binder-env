@@ -1,4 +1,5 @@
-# This file was automatically generated. this is a test
+# This file was automatically generated.
+
 channels:
 - conda-forge
 dependencies:
@@ -10,7 +11,7 @@ dependencies:
 - r-base=4.0.3
 - r-irkernel
 - scikit-learn
-# needed to run one of sklearn-evalation examples
+# needed to run one of sklearn-evaluation examples
 - lxml
 - pip:
   - ploomber>=0.21
@@ -40,3 +41,4 @@ dependencies:
   - psutil
   - memory-profiler
 name: projects
+

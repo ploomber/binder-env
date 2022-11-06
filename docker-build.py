@@ -10,6 +10,10 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.core.utils import ChromeType
 
+# I timed the process one time and it took 7 mins 10 seconds. Adding a little
+# buffer
+TIMEOUT = 600
+
 print('Initializing Chrome driver...')
 
 chrome_service = Service(
@@ -30,7 +34,7 @@ for option in options:
 
 driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
 
-wait = WebDriverWait(driver, 120)
+wait = WebDriverWait(driver, TIMEOUT)
 print('Initialized Chrome driver')
 
 print('Getting URL...')
