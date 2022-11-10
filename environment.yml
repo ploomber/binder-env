@@ -41,4 +41,5 @@ dependencies:
   - duckdb-engine
   - psutil
   - memory-profiler
+  - debuglater[all]
 name: projects
