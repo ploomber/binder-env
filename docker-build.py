@@ -12,7 +12,7 @@ from webdriver_manager.core.utils import ChromeType
 
 # I timed the process one time and it took 7 mins 10 seconds. Adding a
 # buffer
-TIMEOUT = 900
+TIMEOUT = 1200
 
 print('Initializing Chrome driver...')
 
