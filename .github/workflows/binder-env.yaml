@@ -1,23 +1,22 @@
-name: CI
+name: binder-env
 
 on:
   push:
     branches: [main]
   schedule:
-     - cron: '0 0 * * *'
+     - cron: '0 0 * * *' # run every day at midnight
 
 jobs:
-  docker-build:
-
+  binder-env:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.9]
+        python-version: [3.11]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
           python-version: ${{ matrix.python-version }}
 
@@ -39,4 +38,4 @@ jobs:
 
       - name: Docker build
         run: |
-          python docker-build.py
+          python docker-build.py https://binder.ploomber.io/v2/gh/ploomber/binder-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fploomber%252Fprojects%26urlpath%3Dlab%252Ftree%252Fprojects%252FREADME.ipynb%26branch%3Dmaster

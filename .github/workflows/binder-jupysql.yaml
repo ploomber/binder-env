@@ -1,0 +1,31 @@
+name: binder-env
+
+on:
+  push:
+    branches: [main]
+  schedule:
+     - cron: '0 */6 * * *' # run every 6 hours
+
+jobs:
+  jupysql:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.11]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get install -y chromium-browser
+          pip install selenium==4.6.0 webdriver-manager==3.8.4 packaging==21.3
+
+      - name: Docker build
+        run: |
+          python docker-build.py https://binder.ploomber.io/v2/gh/ploomber/jupysql/master
+
