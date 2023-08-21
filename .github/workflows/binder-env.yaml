@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get install -y chromium-browser
-          pip install selenium==4.6.0 webdriver-manager==4.0.0 packaging==23.1
+          pip install selenium==4.11.2 webdriver-manager==4.0.0 packaging==23.1
 
       - name: Update environment.yml
         run:
