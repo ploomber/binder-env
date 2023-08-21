@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          curl -O curl -O https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/linux64/chrome-linux64.zip
+          curl -O https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/linux64/chrome-linux64.zip
           unzip -j chrome-linux64.zip chrome-linux64/chrome
           mkdir -p /opt/google/chrome
           cp chrome /opt/google/chrome
