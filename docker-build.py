@@ -12,6 +12,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.core.os_manager import ChromeType
 
+
 # 1200 is fine for binder-env but jupysql needs more time
 TIMEOUT = 2400
 
