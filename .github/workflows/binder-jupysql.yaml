@@ -22,10 +22,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          curl -O https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/linux64/chrome-linux64.zip
-          unzip -j chrome-linux64.zip chrome-linux64/chrome
-          mkdir -p /opt/google/chrome
-          cp chrome /opt/google/chrome
           pip install selenium==4.11.2 webdriver-manager==4.0.0 packaging==23.1
 
       - name: Docker build
