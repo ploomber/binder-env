@@ -41,4 +41,7 @@ dependencies:
   - jupytext<1.15
   - jupyterlab<4
   - jupyter-server<2
+  # 5.10 introduced an issue that hasn't been fixed
+  # https://github.com/microsoft/azuredatastudio/issues/24443
+  - traitlets<5.10.0
 name: projects
